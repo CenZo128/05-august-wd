@@ -1,0 +1,24 @@
+WEB DESIGN - 12x pertemuan
+Senin, Rabu, Jumat
+Jam 7pm
+
+Pertemuan 1      : Git, Github, HTML + CSS
+Pertemuan 2      : Web 2 Kolom 
+Pertemuan 3      : Advanced CSS Concept
+Pertemuan 4      : Study Case
+Pertemuan 5      : Bootstrap 5.0
+Pertemuan 6      : Form dan Table BS
+Pertemuan 7      : Study Case with BS
+Pertemuan 8, 9   : JavaScript Basic
+Pertemuan 10, 11 : jQuery
+Pertemuan 12     : Study Case
+
+Tools untuk UI Design :
+Adobe XD / Figma
+
+Sertifikat :
+1. Kehadiran : 80% dari jumlah pertemuan 
+2. Nilai     :
+    - LMS
+    - Ujian Teori
+    - Ujian Praktek
