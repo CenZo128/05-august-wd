@@ -1,0 +1,26 @@
+/*
+selector {
+    properties: value;
+}
+*/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: green;
+    font-size: 72px;
+}
+
+h2{
+    color: brown;
+}
+
+h3 {
+    color: lightcoral;
+}
+
+p {
+    font-weight: bold;
+}
