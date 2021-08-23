@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+/* selector root / pusat */
+:root { /*pseudo element*/
+    font-size: 12px;
+    --primary-blue: #0984e3;
+    --primary-blue-light: #74b9ff;
+    --white: #ffffff;
+    --black: #000000;
+    --grey: #cccccc;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+}
+
+.bg-blue-gradient{
+    background: rgb(9,132,227);
+    background: linear-gradient(180deg, var(--primary-blue) 7%, var(--primary-blue-light) 100%);
+}
+
+.header{
+    height: 50vh; /*viewport height*/
+    /* rem : root element, 1 rem : 16px krn scr default root element itu 16px */
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+.header-welcome {
+    text-align: center;
+}
+.header-welcome-heading {
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: 1 rem;
+}
+.header-welcome-text {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.navbar {
+    width: 100%;
+    overflow: hidden;
+}
+.navbar-logo {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar-left {
+    width: 30%;
+    padding: 0.5rem;
+    float: left;
+}
+
+.navbar-right {
+    width: 70%;
+    padding: 0.5rem;
+    float: right;
+}
+.navbar-right ul {
+    list-style: none;
+}
+.navbar-right ul li a {
+    text-decoration: none;
+    float: right;
+    padding: 0.5rem 1rem;
+    color: var(--white);
+    transition: 0.2s;
+    /* margin-left: 0.5rem; */
+    /* margin-right: 0.5rem; */
+}
+.navbar-right ul li a:hover{
+    border-bottom: 2px solid var(--white);
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+}
+.btn-blue {
+    color: var(--white);
+    background-color: var(--primary-blue)
+}
+.btn-blue:hover{
+    background-color: var(--primary-blue-light);
+}
+
+.information {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.information-card{
+    width: 15%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 1rem;
+}
+.information-card img{
+    width: 100%;
+}
+
+.questions-mark{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+
+    width: 75px;
+    padding: 1rem;
+    text-align: center;
+    /* background-color: var(--black); */
+    /* color: var(--white); */
+    border-radius: 5rem;
+    border: 1px solid rgba(0,0,0,0.15);
+    transition: 0.2s;
+}
+.questions-mark:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+.questions-mark-symbol{
+    font-size: 3rem;
+}
