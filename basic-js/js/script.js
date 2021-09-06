@@ -83,7 +83,7 @@
  *  - Min tinggi harus 150 cm
  *  - Jika kurang maka tidak boleh masuk
  * Jika pengunjung "remaja", maka
- *  - Min tinggi harus 150 cm
+ *  - tinggi harus di atas 150 cm
  *  - Jika kurang maka tidak boleh masuk
  * Jika pengunjung "dewasa", maka
  *  - maka langsung masuk
@@ -103,7 +103,7 @@
 //         // console.log("Anak")
 //         break;
 //     case "remaja":
-//         if(height >= 150){
+//         if(height > 150){
 //             console.log("Remaja boleh masuk")
 //         }else{
 //             console.log("Remaja tidak boleh masuk")
@@ -164,11 +164,174 @@ let cart = [
 // Ganjil tidak habis dibagi 2
 // Genap habis dibagi 2
 
-let num = 10;
-for(let i = 1; i <= num; i++){
-    if(i % 2 === 0){
-        console.log(i + " adalah genap");
-    }else if(i % 2 === 1){
-        console.log(i + " adalah ganjil");
+// let num = 10;
+// for(let i = 1; i <= num; i++){
+//     if(i % 2 === 0){
+//         console.log(i + " adalah genap");
+//     }else if(i % 2 === 1){
+//         console.log(i + " adalah ganjil");
+//     }
+// }
+
+/**
+ * Study Case
+ * 
+ * let watches = ["Alba","DW","G-Shock","Rolex","Swiss Army"];
+ * 
+ * Result :
+ * Saya punya Alba, DW, G-Shock, Rolex, dan Swiss Army.
+ */
+// let watches = ["Alba", "DW", "G-Shock", "Rolex", "Swiss Army"];
+
+// let temp = "Saya punya "
+// for (let i = 0; i < watches.length; i++) {
+//     // console.log(watches[i])
+//     if(i !== watches.length - 1){
+//         temp = temp + watches[i] + ", "
+//     }else{
+//         temp += "dan " + watches[i] + "."
+//     }
+// }
+// console.log(temp);
+
+// Function : sekumpulan kode yang hanya melakukan 1 task
+
+// Cek ganjil genap
+
+function cekGenapGanjil(angka) {
+    if (angka % 2 === 0) {
+        console.log("Genap")
+    } else {
+        console.log("Ganjil")
     }
 }
+
+// Call / invoke
+// cekGenapGanjil(10);
+// cekGenapGanjil(5);
+// cekGenapGanjil(7);
+// cekGenapGanjil(115);
+// cekGenapGanjil(12);
+
+/**
+ * STUDY CASE
+ *
+ * Tentukan Bilangan Prima;
+ * Input : 5
+ * Result : true
+ *
+ * Input : 10
+ * Result : false
+ */
+
+// Cari Definisi
+/**
+ * Bilangan Prima : Bilangan yang memiliki 2 faktor, angka 1 dan bilangan itu sendiri
+ *  
+ * Contoh : 5
+ * Memiliki 2 faktor, 1 dan 5 
+ * 
+ * Contoh : 10
+ * Memiliki 4 faktor, 1 2 5 10
+ * 
+ * Contoh : 15
+ * Memiliki 4 faktor, 1 3 5 15
+ * */
+
+function checkPrime(n) {
+    let counter = 0;
+    for (let i = 1; i <= n; i++) {
+        if (n % i === 0) {
+            counter++;
+        }
+    }
+
+    if (counter === 2) {
+        console.log(true)
+    } else {
+        console.log(false)
+    }
+}
+// checkPrime(5)
+// checkPrime(10)
+// checkPrime(15)
+
+function greeting(name1, name2) {
+    console.log("Hello, " + name1 + " dan " + name2);
+}
+
+// greeting("Tests","Toast")
+
+function tiketWahana(visitor, height) {
+    switch (visitor) {
+        case "anak":
+            if (height >= 150) {
+                console.log("Anak boleh masuk")
+            } else {
+                console.log("Anak tidak boleh masuk")
+            }
+            // console.log("Anak")
+            break;
+        case "remaja":
+            if (height > 150) {
+                console.log("Remaja boleh masuk")
+            } else {
+                console.log("Remaja tidak boleh masuk")
+            }
+            // console.log("Remaja")
+            break;
+        case "dewasa":
+            console.log("Dewasa langsung masuk")
+            break;
+        default:
+            console.log("Masukkan jenis visitor yang tepat.")
+            break;
+    }
+}
+// tiketWahana("anak", 170);
+
+// Object : kumpulan value yang miliki key
+
+// let item = ["GTX 1660", "Nvidia", 1000000, true, 5];
+
+let item = {
+    name: "GTX 1660",
+    brand: "Nvidia",
+    price: 1000000,
+    isAvailable: true,
+    stock: 5
+}
+
+// console.log(item);
+let students = [
+    {
+        id: 1,
+        name: "James",
+        gpa: 3.50
+    },
+    {
+        id: 2,
+        name: "Rey",
+        gpa: 3.15
+    },
+    {
+        id: 3,
+        name: "Cindy",
+        gpa: 3.75
+    }
+]
+
+console.log(students)
+
+let data = [
+    {
+        id: 1,
+        name: "Asus",
+        price: 1000,
+        image: "http.",
+        stock: 5,
+        tax: 5,
+        category: "laptop",
+        city: "Jakarta"
+    }
+]
